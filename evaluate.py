@@ -1,5 +1,8 @@
-from keras.models import load_model
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
+import tensorflow as tf
+from keras.models import load_model
 import numpy
 
 model = load_model('diabetes.h5')
